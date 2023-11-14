@@ -18,4 +18,8 @@ dev_dependencies:
   build_runner: ^2.4.6
   dart_code_metrics: ^5.7.4
   flutter_lints: ^2.0.2
-  json_serializable: ^6.7.1
+  pydantic_serializable:
+    git:
+      url: https://github.com/antont/json_serializable_pydantic.dart.git
+      path: json_serializable
+      ref: master
