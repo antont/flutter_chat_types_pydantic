@@ -5,3 +5,8 @@ targets:
         options:
           explicit_to_json: true
           include_if_null: false
+builders:
+  pydantic_serializable:
+    import: "package:pydantic_serializable/builder.dart"
+    builder_factories: ["pydanticSerializable"]
+    build_extensions: {".dart": ["_g.py"]}

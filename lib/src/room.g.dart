@@ -7,12 +7,12 @@ part of 'room.dart';
 // **************************************************************************
 
 class Room(BaseModel):  
-    createdAt: Optional[int]
-    id: Optional[str]
-    imageUrl: Optional[str]
-    lastMessages: Optional[list]
-    metadata: Optional[dict]
-    name: Optional[str]
-    type: Optional[Any]
-    updatedAt: Optional[int]
-    users: Optional[list]
+    createdAt: Optional[int] = None
+    id: Optional[str] = None
+    imageUrl: Optional[str] = None
+    lastMessages: Optional[list] = None
+    metadata: Optional[dict] = None
+    name: Optional[str] = None
+    type: Optional[Any] = None
+    updatedAt: Optional[int] = None
+    users: Optional[list] = None

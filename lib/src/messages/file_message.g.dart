@@ -7,19 +7,19 @@ part of 'file_message.dart';
 // **************************************************************************
 
 class FileMessage(BaseModel):  
-    author: Optional[Any]
-    createdAt: Optional[int]
-    id: Optional[str]
-    isLoading: Optional[bool]
-    metadata: Optional[dict]
-    mimeType: Optional[str]
-    name: Optional[str]
-    remoteId: Optional[str]
-    repliedMessage: Optional[Any]
-    roomId: Optional[str]
-    showStatus: Optional[bool]
-    size: Optional[Any]
-    status: Optional[Any]
-    type: Optional[Any]
-    updatedAt: Optional[int]
-    uri: Optional[str]
+    author: Optional[Any] = None
+    createdAt: Optional[int] = None
+    id: Optional[str] = None
+    isLoading: Optional[bool] = None
+    metadata: Optional[dict] = None
+    mimeType: Optional[str] = None
+    name: Optional[str] = None
+    remoteId: Optional[str] = None
+    repliedMessage: Optional[Any] = None
+    roomId: Optional[str] = None
+    showStatus: Optional[bool] = None
+    size: Optional[Any] = None
+    status: Optional[Any] = None
+    type: Optional[Any] = None
+    updatedAt: Optional[int] = None
+    uri: Optional[str] = None
