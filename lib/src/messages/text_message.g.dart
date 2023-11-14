@@ -6,17 +6,17 @@ part of 'text_message.dart';
 // PydanticSerializableGenerator
 // **************************************************************************
 
-class TextMessage(BaseModel) :  
-      author: author: Any,
-      createdAt: createdAt: int,
-      id: id: str,
-      metadata: metadata: dict,
-      previewData: previewData: Any,
-      remoteId: remoteId: str,
-      repliedMessage: repliedMessage: Any,
-      roomId: roomId: str,
-      showStatus: showStatus: bool,
-      status: status: Any,
-      text: text: str,
-      type: type: Any,
-      updatedAt: updatedAt: int,
+class TextMessage(BaseModel):  
+    author: Optional[Any]
+    createdAt: Optional[int]
+    id: Optional[str]
+    metadata: Optional[dict]
+    previewData: Optional[Any]
+    remoteId: Optional[str]
+    repliedMessage: Optional[Any]
+    roomId: Optional[str]
+    showStatus: Optional[bool]
+    status: Optional[Any]
+    text: Optional[str]
+    type: Optional[Any]
+    updatedAt: Optional[int]

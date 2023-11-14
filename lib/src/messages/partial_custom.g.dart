@@ -6,6 +6,6 @@ part of 'partial_custom.dart';
 // PydanticSerializableGenerator
 // **************************************************************************
 
-class PartialCustom(BaseModel) :  
-      metadata: metadata: dict,
-      repliedMessage: repliedMessage: Any,
+class PartialCustom(BaseModel):  
+    metadata: Optional[dict]
+    repliedMessage: Optional[Any]

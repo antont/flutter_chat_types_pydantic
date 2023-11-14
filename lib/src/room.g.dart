@@ -6,13 +6,13 @@ part of 'room.dart';
 // PydanticSerializableGenerator
 // **************************************************************************
 
-class Room(BaseModel) :  
-      createdAt: createdAt: int,
-      id: id: str,
-      imageUrl: imageUrl: str,
-      lastMessages: lastMessages: list,
-      metadata: metadata: dict,
-      name: name: str,
-      type: type: Any,
-      updatedAt: updatedAt: int,
-      users: users: list,
+class Room(BaseModel):  
+    createdAt: Optional[int]
+    id: Optional[str]
+    imageUrl: Optional[str]
+    lastMessages: Optional[list]
+    metadata: Optional[dict]
+    name: Optional[str]
+    type: Optional[Any]
+    updatedAt: Optional[int]
+    users: Optional[list]

@@ -6,20 +6,20 @@ part of 'file_message.dart';
 // PydanticSerializableGenerator
 // **************************************************************************
 
-class FileMessage(BaseModel) :  
-      author: author: Any,
-      createdAt: createdAt: int,
-      id: id: str,
-      isLoading: isLoading: bool,
-      metadata: metadata: dict,
-      mimeType: mimeType: str,
-      name: name: str,
-      remoteId: remoteId: str,
-      repliedMessage: repliedMessage: Any,
-      roomId: roomId: str,
-      showStatus: showStatus: bool,
-      size: size: Any,
-      status: status: Any,
-      type: type: Any,
-      updatedAt: updatedAt: int,
-      uri: uri: str,
+class FileMessage(BaseModel):  
+    author: Optional[Any]
+    createdAt: Optional[int]
+    id: Optional[str]
+    isLoading: Optional[bool]
+    metadata: Optional[dict]
+    mimeType: Optional[str]
+    name: Optional[str]
+    remoteId: Optional[str]
+    repliedMessage: Optional[Any]
+    roomId: Optional[str]
+    showStatus: Optional[bool]
+    size: Optional[Any]
+    status: Optional[Any]
+    type: Optional[Any]
+    updatedAt: Optional[int]
+    uri: Optional[str]

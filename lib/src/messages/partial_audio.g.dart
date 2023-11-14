@@ -6,12 +6,12 @@ part of 'partial_audio.dart';
 // PydanticSerializableGenerator
 // **************************************************************************
 
-class PartialAudio(BaseModel) :  
-      duration: duration: Any,
-      metadata: metadata: dict,
-      mimeType: mimeType: str,
-      name: name: str,
-      repliedMessage: repliedMessage: Any,
-      size: size: Any,
-      uri: uri: str,
-      waveForm: waveForm: list,
+class PartialAudio(BaseModel):  
+    duration: Optional[Any]
+    metadata: Optional[dict]
+    mimeType: Optional[str]
+    name: Optional[str]
+    repliedMessage: Optional[Any]
+    size: Optional[Any]
+    uri: Optional[str]
+    waveForm: Optional[list]

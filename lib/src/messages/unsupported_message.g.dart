@@ -6,15 +6,15 @@ part of 'unsupported_message.dart';
 // PydanticSerializableGenerator
 // **************************************************************************
 
-class UnsupportedMessage(BaseModel) :  
-      author: author: Any,
-      createdAt: createdAt: int,
-      id: id: str,
-      metadata: metadata: dict,
-      remoteId: remoteId: str,
-      repliedMessage: repliedMessage: Any,
-      roomId: roomId: str,
-      showStatus: showStatus: bool,
-      status: status: Any,
-      type: type: Any,
-      updatedAt: updatedAt: int,
+class UnsupportedMessage(BaseModel):  
+    author: Optional[Any]
+    createdAt: Optional[int]
+    id: Optional[str]
+    metadata: Optional[dict]
+    remoteId: Optional[str]
+    repliedMessage: Optional[Any]
+    roomId: Optional[str]
+    showStatus: Optional[bool]
+    status: Optional[Any]
+    type: Optional[Any]
+    updatedAt: Optional[int]

@@ -6,20 +6,20 @@ part of 'video_message.dart';
 // PydanticSerializableGenerator
 // **************************************************************************
 
-class VideoMessage(BaseModel) :  
-      author: author: Any,
-      createdAt: createdAt: int,
-      height: height: float,
-      id: id: str,
-      metadata: metadata: dict,
-      name: name: str,
-      remoteId: remoteId: str,
-      repliedMessage: repliedMessage: Any,
-      roomId: roomId: str,
-      showStatus: showStatus: bool,
-      size: size: Any,
-      status: status: Any,
-      type: type: Any,
-      updatedAt: updatedAt: int,
-      uri: uri: str,
-      width: width: float,
+class VideoMessage(BaseModel):  
+    author: Optional[Any]
+    createdAt: Optional[int]
+    height: Optional[float]
+    id: Optional[str]
+    metadata: Optional[dict]
+    name: Optional[str]
+    remoteId: Optional[str]
+    repliedMessage: Optional[Any]
+    roomId: Optional[str]
+    showStatus: Optional[bool]
+    size: Optional[Any]
+    status: Optional[Any]
+    type: Optional[Any]
+    updatedAt: Optional[int]
+    uri: Optional[str]
+    width: Optional[float]

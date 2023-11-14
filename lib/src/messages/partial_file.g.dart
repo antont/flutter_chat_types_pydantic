@@ -6,10 +6,10 @@ part of 'partial_file.dart';
 // PydanticSerializableGenerator
 // **************************************************************************
 
-class PartialFile(BaseModel) :  
-      metadata: metadata: dict,
-      mimeType: mimeType: str,
-      name: name: str,
-      repliedMessage: repliedMessage: Any,
-      size: size: Any,
-      uri: uri: str,
+class PartialFile(BaseModel):  
+    metadata: Optional[dict]
+    mimeType: Optional[str]
+    name: Optional[str]
+    repliedMessage: Optional[Any]
+    size: Optional[Any]
+    uri: Optional[str]

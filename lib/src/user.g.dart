@@ -6,13 +6,13 @@ part of 'user.dart';
 // PydanticSerializableGenerator
 // **************************************************************************
 
-class User(BaseModel) :  
-      createdAt: createdAt: int,
-      firstName: firstName: str,
-      id: id: str,
-      imageUrl: imageUrl: str,
-      lastName: lastName: str,
-      lastSeen: lastSeen: int,
-      metadata: metadata: dict,
-      role: role: Any,
-      updatedAt: updatedAt: int,
+class User(BaseModel):  
+    createdAt: Optional[int]
+    firstName: Optional[str]
+    id: Optional[str]
+    imageUrl: Optional[str]
+    lastName: Optional[str]
+    lastSeen: Optional[int]
+    metadata: Optional[dict]
+    role: Optional[Any]
+    updatedAt: Optional[int]

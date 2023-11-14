@@ -6,8 +6,8 @@ part of 'partial_text.dart';
 // PydanticSerializableGenerator
 // **************************************************************************
 
-class PartialText(BaseModel) :  
-      metadata: metadata: dict,
-      previewData: previewData: Any,
-      repliedMessage: repliedMessage: Any,
-      text: text: str,
+class PartialText(BaseModel):  
+    metadata: Optional[dict]
+    previewData: Optional[Any]
+    repliedMessage: Optional[Any]
+    text: Optional[str]

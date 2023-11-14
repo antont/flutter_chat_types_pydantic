@@ -6,13 +6,13 @@ part of 'preview_data.dart';
 // PydanticSerializableGenerator
 // **************************************************************************
 
-class PreviewData(BaseModel) :  
-      description: description: str,
-      image: image: Any,
-      link: link: str,
-      title: title: str,
+class PreviewData(BaseModel):  
+    description: Optional[str]
+    image: Optional[Any]
+    link: Optional[str]
+    title: Optional[str]
 
-class PreviewDataImage(BaseModel) :  
-      height: height: float,
-      url: url: str,
-      width: width: float,
+class PreviewDataImage(BaseModel):  
+    height: Optional[float]
+    url: Optional[str]
+    width: Optional[float]

@@ -6,21 +6,21 @@ part of 'audio_message.dart';
 // PydanticSerializableGenerator
 // **************************************************************************
 
-class AudioMessage(BaseModel) :  
-      author: author: Any,
-      createdAt: createdAt: int,
-      duration: duration: Any,
-      id: id: str,
-      metadata: metadata: dict,
-      mimeType: mimeType: str,
-      name: name: str,
-      remoteId: remoteId: str,
-      repliedMessage: repliedMessage: Any,
-      roomId: roomId: str,
-      showStatus: showStatus: bool,
-      size: size: Any,
-      status: status: Any,
-      type: type: Any,
-      updatedAt: updatedAt: int,
-      uri: uri: str,
-      waveForm: waveForm: list,
+class AudioMessage(BaseModel):  
+    author: Optional[Any]
+    createdAt: Optional[int]
+    duration: Optional[Any]
+    id: Optional[str]
+    metadata: Optional[dict]
+    mimeType: Optional[str]
+    name: Optional[str]
+    remoteId: Optional[str]
+    repliedMessage: Optional[Any]
+    roomId: Optional[str]
+    showStatus: Optional[bool]
+    size: Optional[Any]
+    status: Optional[Any]
+    type: Optional[Any]
+    updatedAt: Optional[int]
+    uri: Optional[str]
+    waveForm: Optional[list]
