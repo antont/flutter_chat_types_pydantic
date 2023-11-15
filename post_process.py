@@ -6,7 +6,10 @@ OUT = "flutter_chat_pydantic"
 
 type2module = {
     'User': 'user',
-    'Message': 'message'
+    'Message': 'message',
+    'Status': 'message',
+    'MessageType': 'message',
+    'PreviewData': 'preview_data'
 }
 
 enums = {
