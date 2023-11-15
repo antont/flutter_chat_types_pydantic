@@ -3,7 +3,7 @@ from typing import Optional
 
 from pydantic import BaseModel
 
-from message import Message
+from ..message import Message
 
 class PartialVideo(BaseModel):  
     height: Optional[float]

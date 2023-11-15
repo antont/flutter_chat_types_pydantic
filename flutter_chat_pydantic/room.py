@@ -3,8 +3,8 @@ from typing import Optional
 
 from pydantic import BaseModel
 
-from user import User
-from message import Message
+from .user import User
+from .message import Message
 from enum import StrEnum, auto
 
 class RoomType(StrEnum):

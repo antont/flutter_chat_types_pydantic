@@ -3,7 +3,7 @@ from typing import Optional
 
 from pydantic import BaseModel
 
-from preview_data import PreviewData
+from .preview_data import PreviewData
 
 class PreviewData(BaseModel):  
     description: Optional[str]

@@ -3,8 +3,8 @@ from typing import Optional
 
 from pydantic import BaseModel
 
-from message import Message
-from preview_data import PreviewData
+from ..message import Message
+from ..preview_data import PreviewData
 
 class PartialText(BaseModel):  
     metadata: Optional[dict]

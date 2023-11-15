@@ -3,10 +3,10 @@ from typing import Optional
 
 from pydantic import BaseModel
 
-from user import User
-from message import Message
-from message import Status
-from message import MessageType
+from ..user import User
+from ..message import Message
+from ..message import Status
+from ..message import MessageType
 
 class CustomMessage(BaseModel):  
     author: User

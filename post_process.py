@@ -26,16 +26,22 @@ enums = {
 """
 }
 
-def process(content: str):
+def process(content: str, dirpath: str):
     begin_py = content.index('class')
     content = content[begin_py:]
 
     imports = ""
     for type, module in type2module.items():
         if type in content:
+            if dirpath.endswith('/src'):
+                relimport = '.'
+            elif dirpath.endswith('src/messages'):
+                relimport = '..'
+            else:
+                raise RuntimeError(f"Unknown dirpath {dirpath}")
             imports = "\n".join(
                 [imports,
-                f"from {module} import {type}"]
+                f"from {relimport}{module} import {type}"]
             )
 
     inject_enums = ""
@@ -61,7 +67,7 @@ for dirpath, dirnames, filenames in os.walk(DIR):
             print(file_name)
             with open(os.path.join(dirpath, file_name), 'r') as file:
                 content = file.read()
-                processed = process(content)
+                processed = process(content, dirpath)
                 out_dir = os.path.join(OUT, os.path.relpath(dirpath, DIR))
                 os.makedirs(out_dir, exist_ok=True)
                 file_name_py = file_name.replace('.g.dart', '.py')

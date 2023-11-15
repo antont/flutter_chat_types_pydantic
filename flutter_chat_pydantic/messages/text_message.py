@@ -3,11 +3,11 @@ from typing import Optional
 
 from pydantic import BaseModel
 
-from user import User
-from message import Message
-from message import Status
-from message import MessageType
-from preview_data import PreviewData
+from ..user import User
+from ..message import Message
+from ..message import Status
+from ..message import MessageType
+from ..preview_data import PreviewData
 
 class TextMessage(BaseModel):  
     author: User

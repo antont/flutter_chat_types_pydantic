@@ -3,7 +3,7 @@ from typing import Optional
 
 from pydantic import BaseModel
 
-from message import Message
+from ..message import Message
 
 class PartialCustom(BaseModel):  
     metadata: Optional[dict]
