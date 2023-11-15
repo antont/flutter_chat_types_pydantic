@@ -7,19 +7,19 @@ part of 'image_message.dart';
 // **************************************************************************
 
 class ImageMessage(BaseModel):  
-    author: Optional[Any] = None
-    createdAt: Optional[int] = None
-    height: Optional[float] = None
-    id: Optional[str] = None
-    metadata: Optional[dict] = None
-    name: Optional[str] = None
-    remoteId: Optional[str] = None
-    repliedMessage: Optional[Any] = None
-    roomId: Optional[str] = None
-    showStatus: Optional[bool] = None
-    size: Optional[Any] = None
-    status: Optional[Any] = None
-    type: Optional[Any] = None
-    updatedAt: Optional[int] = None
-    uri: Optional[str] = None
-    width: Optional[float] = None
+    author: Any
+    createdAt: Optional[int]
+    height: Optional[float]
+    id: str
+    metadata: Optional[dict]
+    name: str
+    remoteId: Optional[str]
+    repliedMessage: Optional[Any]
+    roomId: Optional[str]
+    showStatus: Optional[bool]
+    size: Any
+    status: Optional[Any]
+    type: Optional[Any]
+    updatedAt: Optional[int]
+    uri: str
+    width: Optional[float]

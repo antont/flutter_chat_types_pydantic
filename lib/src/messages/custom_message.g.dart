@@ -7,14 +7,14 @@ part of 'custom_message.dart';
 // **************************************************************************
 
 class CustomMessage(BaseModel):  
-    author: Optional[Any] = None
-    createdAt: Optional[int] = None
-    id: Optional[str] = None
-    metadata: Optional[dict] = None
-    remoteId: Optional[str] = None
-    repliedMessage: Optional[Any] = None
-    roomId: Optional[str] = None
-    showStatus: Optional[bool] = None
-    status: Optional[Any] = None
-    type: Optional[Any] = None
-    updatedAt: Optional[int] = None
+    author: Any
+    createdAt: Optional[int]
+    id: str
+    metadata: Optional[dict]
+    remoteId: Optional[str]
+    repliedMessage: Optional[Any]
+    roomId: Optional[str]
+    showStatus: Optional[bool]
+    status: Optional[Any]
+    type: Optional[Any]
+    updatedAt: Optional[int]

@@ -7,12 +7,12 @@ part of 'user.dart';
 // **************************************************************************
 
 class User(BaseModel):  
-    createdAt: Optional[int] = None
-    firstName: Optional[str] = None
-    id: Optional[str] = None
-    imageUrl: Optional[str] = None
-    lastName: Optional[str] = None
-    lastSeen: Optional[int] = None
-    metadata: Optional[dict] = None
-    role: Optional[Any] = None
-    updatedAt: Optional[int] = None
+    createdAt: Optional[int]
+    firstName: Optional[str]
+    id: str
+    imageUrl: Optional[str]
+    lastName: Optional[str]
+    lastSeen: Optional[int]
+    metadata: Optional[dict]
+    role: Optional[Any]
+    updatedAt: Optional[int]

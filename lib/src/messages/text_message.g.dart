@@ -7,16 +7,16 @@ part of 'text_message.dart';
 // **************************************************************************
 
 class TextMessage(BaseModel):  
-    author: Optional[Any] = None
-    createdAt: Optional[int] = None
-    id: Optional[str] = None
-    metadata: Optional[dict] = None
-    previewData: Optional[Any] = None
-    remoteId: Optional[str] = None
-    repliedMessage: Optional[Any] = None
-    roomId: Optional[str] = None
-    showStatus: Optional[bool] = None
-    status: Optional[Any] = None
-    text: Optional[str] = None
-    type: Optional[Any] = None
-    updatedAt: Optional[int] = None
+    author: Any
+    createdAt: Optional[int]
+    id: str
+    metadata: Optional[dict]
+    previewData: Optional[Any]
+    remoteId: Optional[str]
+    repliedMessage: Optional[Any]
+    roomId: Optional[str]
+    showStatus: Optional[bool]
+    status: Optional[Any]
+    text: str
+    type: Optional[Any]
+    updatedAt: Optional[int]

@@ -7,12 +7,12 @@ part of 'preview_data.dart';
 // **************************************************************************
 
 class PreviewData(BaseModel):  
-    description: Optional[str] = None
-    image: Optional[Any] = None
-    link: Optional[str] = None
-    title: Optional[str] = None
+    description: Optional[str]
+    image: Optional[Any]
+    link: Optional[str]
+    title: Optional[str]
 
 class PreviewDataImage(BaseModel):  
-    height: Optional[float] = None
-    url: Optional[str] = None
-    width: Optional[float] = None
+    height: float
+    url: str
+    width: float
