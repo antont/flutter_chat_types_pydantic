@@ -3,13 +3,12 @@ from typing import Optional
 
 from pydantic import BaseModel
 
-from .preview_data import PreviewData
 
 class PreviewData(BaseModel):  
-    description: Optional[str]
-    image: Optional[PreviewDataImage]
-    link: Optional[str]
-    title: Optional[str]
+    description: Optional[str] = None
+    image: Optional[PreviewDataImage] = None
+    link: Optional[str] = None
+    title: Optional[str] = None
 
 class PreviewDataImage(BaseModel):  
     height: float

@@ -7,9 +7,9 @@ part of 'partial_file.dart';
 // **************************************************************************
 
 class PartialFile(BaseModel):  
-    metadata: Optional[dict]
-    mimeType: Optional[str]
+    metadata: Optional[dict] = None
+    mimeType: Optional[str] = None
     name: str
-    repliedMessage: Optional[Message]
+    repliedMessage: Optional[Message] = None
     size: float
     uri: str

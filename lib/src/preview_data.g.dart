@@ -7,10 +7,10 @@ part of 'preview_data.dart';
 // **************************************************************************
 
 class PreviewData(BaseModel):  
-    description: Optional[str]
-    image: Optional[PreviewDataImage]
-    link: Optional[str]
-    title: Optional[str]
+    description: Optional[str] = None
+    image: Optional[PreviewDataImage] = None
+    link: Optional[str] = None
+    title: Optional[str] = None
 
 class PreviewDataImage(BaseModel):  
     height: float

@@ -8,18 +8,18 @@ part of 'image_message.dart';
 
 class ImageMessage(BaseModel):  
     author: User
-    createdAt: Optional[int]
-    height: Optional[float]
+    createdAt: Optional[int] = None
+    height: Optional[float] = None
     id: str
-    metadata: Optional[dict]
+    metadata: Optional[dict] = None
     name: str
-    remoteId: Optional[str]
-    repliedMessage: Optional[Message]
-    roomId: Optional[str]
-    showStatus: Optional[bool]
+    remoteId: Optional[str] = None
+    repliedMessage: Optional[Message] = None
+    roomId: Optional[str] = None
+    showStatus: Optional[bool] = None
     size: float
-    status: Optional[Status]
-    type: Optional[MessageType]
-    updatedAt: Optional[int]
+    status: Optional[Status] = None
+    type: Optional[MessageType] = None
+    updatedAt: Optional[int] = None
     uri: str
-    width: Optional[float]
+    width: Optional[float] = None

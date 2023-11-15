@@ -7,10 +7,10 @@ part of 'partial_video.dart';
 // **************************************************************************
 
 class PartialVideo(BaseModel):  
-    height: Optional[float]
-    metadata: Optional[dict]
+    height: Optional[float] = None
+    metadata: Optional[dict] = None
     name: str
-    repliedMessage: Optional[Message]
+    repliedMessage: Optional[Message] = None
     size: float
     uri: str
-    width: Optional[float]
+    width: Optional[float] = None

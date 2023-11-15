@@ -8,19 +8,19 @@ part of 'audio_message.dart';
 
 class AudioMessage(BaseModel):  
     author: User
-    createdAt: Optional[int]
+    createdAt: Optional[int] = None
     duration: Duration
     id: str
-    metadata: Optional[dict]
-    mimeType: Optional[str]
+    metadata: Optional[dict] = None
+    mimeType: Optional[str] = None
     name: str
-    remoteId: Optional[str]
-    repliedMessage: Optional[Message]
-    roomId: Optional[str]
-    showStatus: Optional[bool]
+    remoteId: Optional[str] = None
+    repliedMessage: Optional[Message] = None
+    roomId: Optional[str] = None
+    showStatus: Optional[bool] = None
     size: float
-    status: Optional[Status]
-    type: Optional[MessageType]
-    updatedAt: Optional[int]
+    status: Optional[Status] = None
+    type: Optional[MessageType] = None
+    updatedAt: Optional[int] = None
     uri: str
-    waveForm: Optional[list[float]]
+    waveForm: Optional[list[float]] = None

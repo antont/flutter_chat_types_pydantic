@@ -26,12 +26,14 @@ enums = {
 """
 }
 
-def process(content: str, dirpath: str):
+def process(content: str, dirpath: str, file_name: str):
     begin_py = content.index('class')
     content = content[begin_py:]
 
     imports = ""
     for type, module in type2module.items():
+        if file_name.split('.')[0] == module:
+            continue
         if type in content:
             if dirpath.endswith('/src'):
                 relimport = '.'
@@ -67,7 +69,7 @@ for dirpath, dirnames, filenames in os.walk(DIR):
             print(file_name)
             with open(os.path.join(dirpath, file_name), 'r') as file:
                 content = file.read()
-                processed = process(content, dirpath)
+                processed = process(content, dirpath, file_name)
                 out_dir = os.path.join(OUT, os.path.relpath(dirpath, DIR))
                 os.makedirs(out_dir, exist_ok=True)
                 file_name_py = file_name.replace('.g.dart', '.py')

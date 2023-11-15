@@ -7,8 +7,8 @@ from ..message import Message
 from ..preview_data import PreviewData
 
 class PartialText(BaseModel):  
-    metadata: Optional[dict]
-    previewData: Optional[PreviewData]
-    repliedMessage: Optional[Message]
+    metadata: Optional[dict] = None
+    previewData: Optional[PreviewData] = None
+    repliedMessage: Optional[Message] = None
     text: str
 

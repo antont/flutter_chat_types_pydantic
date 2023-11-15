@@ -7,5 +7,5 @@ part of 'partial_custom.dart';
 // **************************************************************************
 
 class PartialCustom(BaseModel):  
-    metadata: Optional[dict]
-    repliedMessage: Optional[Message]
+    metadata: Optional[dict] = None
+    repliedMessage: Optional[Message] = None

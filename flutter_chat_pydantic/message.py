@@ -3,6 +3,8 @@ from typing import Optional
 
 from pydantic import BaseModel
 
+from .user import User
+
 class MessageType(StrEnum):
     audio = auto()
     custom = auto()
@@ -21,7 +23,7 @@ class Status(StrEnum):
     sent = auto()
 
 class Message(BaseModel):
-    author: "User"
+    author: User
     createdAt: Optional[int] = None
     id: str
     metadata: Optional[dict] = None

@@ -7,7 +7,7 @@ part of 'partial_text.dart';
 // **************************************************************************
 
 class PartialText(BaseModel):  
-    metadata: Optional[dict]
-    previewData: Optional[PreviewData]
-    repliedMessage: Optional[Message]
+    metadata: Optional[dict] = None
+    previewData: Optional[PreviewData] = None
+    repliedMessage: Optional[Message] = None
     text: str

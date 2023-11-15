@@ -8,15 +8,15 @@ part of 'text_message.dart';
 
 class TextMessage(BaseModel):  
     author: User
-    createdAt: Optional[int]
+    createdAt: Optional[int] = None
     id: str
-    metadata: Optional[dict]
-    previewData: Optional[PreviewData]
-    remoteId: Optional[str]
-    repliedMessage: Optional[Message]
-    roomId: Optional[str]
-    showStatus: Optional[bool]
-    status: Optional[Status]
+    metadata: Optional[dict] = None
+    previewData: Optional[PreviewData] = None
+    remoteId: Optional[str] = None
+    repliedMessage: Optional[Message] = None
+    roomId: Optional[str] = None
+    showStatus: Optional[bool] = None
+    status: Optional[Status] = None
     text: str
-    type: Optional[MessageType]
-    updatedAt: Optional[int]
+    type: Optional[MessageType] = None
+    updatedAt: Optional[int] = None

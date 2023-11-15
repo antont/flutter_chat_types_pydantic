@@ -6,6 +6,6 @@ from pydantic import BaseModel
 from ..message import Message
 
 class PartialCustom(BaseModel):  
-    metadata: Optional[dict]
-    repliedMessage: Optional[Message]
+    metadata: Optional[dict] = None
+    repliedMessage: Optional[Message] = None
 

@@ -6,10 +6,10 @@ from pydantic import BaseModel
 from ..message import Message
 
 class PartialFile(BaseModel):  
-    metadata: Optional[dict]
-    mimeType: Optional[str]
+    metadata: Optional[dict] = None
+    mimeType: Optional[str] = None
     name: str
-    repliedMessage: Optional[Message]
+    repliedMessage: Optional[Message] = None
     size: float
     uri: str
 

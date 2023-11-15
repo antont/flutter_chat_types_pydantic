@@ -3,7 +3,6 @@ from typing import Optional
 
 from pydantic import BaseModel
 
-from .user import User
 from enum import StrEnum, auto
 
 class Role(StrEnum):
@@ -13,13 +12,13 @@ class Role(StrEnum):
     user = auto()
 
 class User(BaseModel):  
-    createdAt: Optional[int]
-    firstName: Optional[str]
+    createdAt: Optional[int] = None
+    firstName: Optional[str] = None
     id: str
-    imageUrl: Optional[str]
-    lastName: Optional[str]
-    lastSeen: Optional[int]
-    metadata: Optional[dict]
-    role: Optional[Role]
-    updatedAt: Optional[int]
+    imageUrl: Optional[str] = None
+    lastName: Optional[str] = None
+    lastSeen: Optional[int] = None
+    metadata: Optional[dict] = None
+    role: Optional[Role] = None
+    updatedAt: Optional[int] = None
 

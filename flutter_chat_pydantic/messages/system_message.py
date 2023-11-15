@@ -9,16 +9,16 @@ from ..message import Status
 from ..message import MessageType
 
 class SystemMessage(BaseModel):  
-    author: Optional[User]
-    createdAt: Optional[int]
+    author: Optional[User] = None
+    createdAt: Optional[int] = None
     id: str
-    metadata: Optional[dict]
-    remoteId: Optional[str]
-    repliedMessage: Optional[Message]
-    roomId: Optional[str]
-    showStatus: Optional[bool]
-    status: Optional[Status]
+    metadata: Optional[dict] = None
+    remoteId: Optional[str] = None
+    repliedMessage: Optional[Message] = None
+    roomId: Optional[str] = None
+    showStatus: Optional[bool] = None
+    status: Optional[Status] = None
     text: str
-    type: Optional[MessageType]
-    updatedAt: Optional[int]
+    type: Optional[MessageType] = None
+    updatedAt: Optional[int] = None
 

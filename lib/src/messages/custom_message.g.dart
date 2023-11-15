@@ -8,13 +8,13 @@ part of 'custom_message.dart';
 
 class CustomMessage(BaseModel):  
     author: User
-    createdAt: Optional[int]
+    createdAt: Optional[int] = None
     id: str
-    metadata: Optional[dict]
-    remoteId: Optional[str]
-    repliedMessage: Optional[Message]
-    roomId: Optional[str]
-    showStatus: Optional[bool]
-    status: Optional[Status]
-    type: Optional[MessageType]
-    updatedAt: Optional[int]
+    metadata: Optional[dict] = None
+    remoteId: Optional[str] = None
+    repliedMessage: Optional[Message] = None
+    roomId: Optional[str] = None
+    showStatus: Optional[bool] = None
+    status: Optional[Status] = None
+    type: Optional[MessageType] = None
+    updatedAt: Optional[int] = None
