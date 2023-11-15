@@ -10,6 +10,6 @@ class PartialFile(BaseModel):
     metadata: Optional[dict]
     mimeType: Optional[str]
     name: str
-    repliedMessage: Optional[Any]
-    size: Any
+    repliedMessage: Optional[Message]
+    size: num
     uri: str

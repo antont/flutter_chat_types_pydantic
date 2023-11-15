@@ -7,11 +7,11 @@ part of 'partial_audio.dart';
 // **************************************************************************
 
 class PartialAudio(BaseModel):  
-    duration: Any
+    duration: Duration
     metadata: Optional[dict]
     mimeType: Optional[str]
     name: str
-    repliedMessage: Optional[Any]
-    size: Any
+    repliedMessage: Optional[Message]
+    size: num
     uri: str
     waveForm: Optional[list]

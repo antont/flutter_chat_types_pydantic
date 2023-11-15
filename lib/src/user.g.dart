@@ -14,5 +14,5 @@ class User(BaseModel):
     lastName: Optional[str]
     lastSeen: Optional[int]
     metadata: Optional[dict]
-    role: Optional[Any]
+    role: Optional[Role]
     updatedAt: Optional[int]

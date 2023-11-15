@@ -13,6 +13,6 @@ class Room(BaseModel):
     lastMessages: Optional[list]
     metadata: Optional[dict]
     name: Optional[str]
-    type: Any
+    type: Optional[RoomType]
     updatedAt: Optional[int]
     users: list

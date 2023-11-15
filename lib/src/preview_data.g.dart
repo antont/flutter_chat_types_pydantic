@@ -8,7 +8,7 @@ part of 'preview_data.dart';
 
 class PreviewData(BaseModel):  
     description: Optional[str]
-    image: Optional[Any]
+    image: Optional[PreviewDataImage]
     link: Optional[str]
     title: Optional[str]
 

@@ -7,20 +7,20 @@ part of 'audio_message.dart';
 // **************************************************************************
 
 class AudioMessage(BaseModel):  
-    author: Any
+    author: User
     createdAt: Optional[int]
-    duration: Any
+    duration: Duration
     id: str
     metadata: Optional[dict]
     mimeType: Optional[str]
     name: str
     remoteId: Optional[str]
-    repliedMessage: Optional[Any]
+    repliedMessage: Optional[Message]
     roomId: Optional[str]
     showStatus: Optional[bool]
-    size: Any
-    status: Optional[Any]
-    type: Optional[Any]
+    size: num
+    status: Optional[Status]
+    type: Optional[MessageType]
     updatedAt: Optional[int]
     uri: str
     waveForm: Optional[list]

@@ -7,14 +7,14 @@ part of 'unsupported_message.dart';
 // **************************************************************************
 
 class UnsupportedMessage(BaseModel):  
-    author: Any
+    author: User
     createdAt: Optional[int]
     id: str
     metadata: Optional[dict]
     remoteId: Optional[str]
-    repliedMessage: Optional[Any]
+    repliedMessage: Optional[Message]
     roomId: Optional[str]
     showStatus: Optional[bool]
-    status: Optional[Any]
-    type: Optional[Any]
+    status: Optional[Status]
+    type: Optional[MessageType]
     updatedAt: Optional[int]

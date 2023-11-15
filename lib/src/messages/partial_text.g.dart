@@ -8,6 +8,6 @@ part of 'partial_text.dart';
 
 class PartialText(BaseModel):  
     metadata: Optional[dict]
-    previewData: Optional[Any]
-    repliedMessage: Optional[Any]
+    previewData: Optional[PreviewData]
+    repliedMessage: Optional[Message]
     text: str

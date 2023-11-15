@@ -7,15 +7,15 @@ part of 'system_message.dart';
 // **************************************************************************
 
 class SystemMessage(BaseModel):  
-    author: Optional[Any]
+    author: Optional[User]
     createdAt: Optional[int]
     id: str
     metadata: Optional[dict]
     remoteId: Optional[str]
-    repliedMessage: Optional[Any]
+    repliedMessage: Optional[Message]
     roomId: Optional[str]
     showStatus: Optional[bool]
-    status: Optional[Any]
+    status: Optional[Status]
     text: str
-    type: Optional[Any]
+    type: Optional[MessageType]
     updatedAt: Optional[int]

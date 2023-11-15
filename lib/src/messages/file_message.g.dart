@@ -7,7 +7,7 @@ part of 'file_message.dart';
 // **************************************************************************
 
 class FileMessage(BaseModel):  
-    author: Any
+    author: User
     createdAt: Optional[int]
     id: str
     isLoading: Optional[bool]
@@ -15,11 +15,11 @@ class FileMessage(BaseModel):
     mimeType: Optional[str]
     name: str
     remoteId: Optional[str]
-    repliedMessage: Optional[Any]
+    repliedMessage: Optional[Message]
     roomId: Optional[str]
     showStatus: Optional[bool]
-    size: Any
-    status: Optional[Any]
-    type: Optional[Any]
+    size: num
+    status: Optional[Status]
+    type: Optional[MessageType]
     updatedAt: Optional[int]
     uri: str
