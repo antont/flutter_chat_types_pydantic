@@ -10,9 +10,9 @@ class Room(BaseModel):
     createdAt: Optional[int]
     id: str
     imageUrl: Optional[str]
-    lastMessages: Optional[list]
+    lastMessages: Optional[list[Message]]
     metadata: Optional[dict]
     name: Optional[str]
     type: Optional[RoomType]
     updatedAt: Optional[int]
-    users: list
+    users: list[User]

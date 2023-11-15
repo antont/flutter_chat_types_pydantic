@@ -14,4 +14,4 @@ class PartialAudio(BaseModel):
     repliedMessage: Optional[Message]
     size: num
     uri: str
-    waveForm: Optional[list]
+    waveForm: Optional[list[float]]

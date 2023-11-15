@@ -23,4 +23,4 @@ class AudioMessage(BaseModel):
     type: Optional[MessageType]
     updatedAt: Optional[int]
     uri: str
-    waveForm: Optional[list]
+    waveForm: Optional[list[float]]
