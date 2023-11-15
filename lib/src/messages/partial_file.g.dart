@@ -11,5 +11,5 @@ class PartialFile(BaseModel):
     mimeType: Optional[str]
     name: str
     repliedMessage: Optional[Message]
-    size: num
+    size: float
     uri: str

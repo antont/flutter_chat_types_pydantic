@@ -18,7 +18,7 @@ class FileMessage(BaseModel):
     repliedMessage: Optional[Message]
     roomId: Optional[str]
     showStatus: Optional[bool]
-    size: num
+    size: float
     status: Optional[Status]
     type: Optional[MessageType]
     updatedAt: Optional[int]

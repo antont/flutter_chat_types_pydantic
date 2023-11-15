@@ -12,6 +12,6 @@ class PartialAudio(BaseModel):
     mimeType: Optional[str]
     name: str
     repliedMessage: Optional[Message]
-    size: num
+    size: float
     uri: str
     waveForm: Optional[list[float]]

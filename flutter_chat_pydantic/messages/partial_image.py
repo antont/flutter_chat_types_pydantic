@@ -10,7 +10,7 @@ class PartialImage(BaseModel):
     metadata: Optional[dict]
     name: str
     repliedMessage: Optional[Message]
-    size: num
+    size: float
     uri: str
     width: Optional[float]
 
