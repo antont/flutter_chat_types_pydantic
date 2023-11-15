@@ -4,6 +4,13 @@ from typing import Optional
 from pydantic import BaseModel
 
 from user import User
+from enum import StrEnum, auto
+
+class Role(StrEnum):
+    admin = auto()
+    agent = auto()
+    moderator = auto()
+    user = auto()
 
 class User(BaseModel):  
     createdAt: Optional[int]

@@ -5,6 +5,12 @@ from pydantic import BaseModel
 
 from user import User
 from message import Message
+from enum import StrEnum, auto
+
+class RoomType(StrEnum):
+    channel = auto()
+    direct = auto()
+    group = auto()
 
 class Room(BaseModel):  
     createdAt: Optional[int]
